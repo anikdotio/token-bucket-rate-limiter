@@ -1,20 +1,32 @@
 {
   "name": "token-rate-limiter",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Distributed Token Bucket Rate Limiter using Redis, Lua Scripts and Express.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "redis",
+    "express",
+    "nodejs",
+    "lua",
+    "docker",
+    "rate-limiter",
+    "token-bucket",
+    "middleware",
+    "backend"
+  ],
+  "author": "Anik Kapath",
+  "license": "MIT"          ,
   "type": "commonjs",
   "dependencies": {
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "redis": "^6.1.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
   }
-}
+} 
